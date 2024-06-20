@@ -60,7 +60,7 @@ public class Main {
 		String areWireless;
 		
 		//Verifichiamo il valore della variabile telSmart, se vero daremo ad isSmart valroe "Sì", altrimenti valore "No"
-		if (newHeadPhones.isCufWireless()) {
+		if (newHeadPhones.isHPWireless()) {
 			areWireless = "Wireless";
 		}else {
 			areWireless = "Cablate";
@@ -71,7 +71,7 @@ public class Main {
 		System.out.println("Marca: " + newHeadPhones.getProdBrand());
 		System.out.printf("Prezzo base: %.2f €\n", newHeadPhones.getProdPrice());
 		System.out.println("Iva applicata: " + newHeadPhones.getProdIva());
-		System.out.println("Colore: " + newHeadPhones.getCufColor() + "\"");
+		System.out.println("Colore: " + newHeadPhones.getHPColor() + "\"");
 		System.out.println("Wireless/Cablate: " + areWireless);
 		System.out.printf("Prezzo + IVA: %.2f €\n", newHeadPhones.getTaxedPrice());
 		System.out.println("Codice numerico: " + newHeadPhones.getProdCode());

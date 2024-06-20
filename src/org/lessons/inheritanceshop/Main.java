@@ -24,7 +24,7 @@ public class Main {
 		
 		
 		
-		//Creazione di un'istannza della classe Smartphone e stampa di prova di metodi e attributi
+		//Creazione di un'istannza della classe Televisore e stampa di prova di metodi e attributi
 		
 		Televisore newTv = new Televisore("BohTV" , "Samsung" , 500 , 22 ,(byte) 52 , true);
 		
@@ -52,14 +52,14 @@ public class Main {
 		
 		
 		
-		//Creazione di un'istannza della classe Smartphone e stampa di prova di metodi e attributi
+		//Creazione di un'istannza della classe Cuffie e stampa di prova di metodi e attributi
 		
 		Cuffie newHeadPhones = new Cuffie("HD-619" , "AKG" , 200 , 22 , "Verde" , false);
 				
-		//Dichiariamo una variabile che useremo per visualizzare se il televisore è smart oppure no in forma più leggibile
+		//Dichiariamo una variabile che useremo per visualizzare se le cuffie sono wireless o cablate in forma più leggibile
 		String areWireless;
 		
-		//Verifichiamo il valore della variabile telSmart, se vero daremo ad isSmart valroe "Sì", altrimenti valore "No"
+		//Verifichiamo il valore della variabile hpWireless, se vero daremo a areWireless il valore "Wireless", altrimenti valore "Cablate"
 		if (newHeadPhones.isHPWireless()) {
 			areWireless = "Wireless";
 		}else {

@@ -88,7 +88,24 @@ public class Prodotto {
 	}
 
 	
+	//Metodo per avere il prezzo + IVA
 	
+	public float getTaxedPrice( ) {
+			
+		//Restituiamo il risultato della somma tra il prezzo del prodotto e la percentuale d'IVA
+			
+		return prodPrice + (prodPrice*prodIva/100);
+	}
+		
+	//Metodo per ottenere il codice completo formato prodcode-nome del prodotto
+		
+	public String getFullProdName() {
+			
+		//Dichiariamo una variabile locale che conterrà il nome completo del prodotto
+		String fullName = String.format("%08d-%s",getProdCode() ,prodName);
+		
+		return fullName;
+	}
 
 	
 	

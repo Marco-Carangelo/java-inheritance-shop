@@ -11,6 +11,7 @@ public class Prodotto {
 	 private int prodIva;
 	 
 	 
+	 
 	 //Metodo costruttore della classe
 	 
 	public Prodotto(String prodName,String prodBrand,float prodPrice,int prodIva) {
@@ -29,6 +30,65 @@ public class Prodotto {
 		this.prodPrice=prodPrice;
 		this.prodIva=prodIva;
 	}
+
+
+	
+	//Metodi Getter e Setter
+	
+	public String getProdName() {
+		return prodName;
+	}
+
+
+
+	public void setProdName(String prodName) {
+		this.prodName = prodName;
+	}
+
+
+
+	public String getProdBrand() {
+		return prodBrand;
+	}
+
+
+
+	public void setProdBrand(String prodBrand) {
+		this.prodBrand = prodBrand;
+	}
+
+
+
+	public float getProdPrice() {
+		return prodPrice;
+	}
+
+
+
+	public void setProdPrice(float prodPrice) {
+		this.prodPrice = prodPrice;
+	}
+
+
+
+	public int getProdIva() {
+		return prodIva;
+	}
+
+
+
+	public void setProdIva(int prodIva) {
+		this.prodIva = prodIva;
+	}
+
+
+
+	public int getProdCode() {
+		return prodCode;
+	}
+
+	
+	
 
 	
 	

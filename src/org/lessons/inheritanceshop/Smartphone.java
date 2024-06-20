@@ -17,5 +17,28 @@ public class Smartphone extends Prodotto {
 		this.memory = memory;
 		
 	}
+	
+	
+	//Metodi getter e setter
+	
+	public String getImeiCod() {
+		return imeiCod;
+	}
+
+	public void setImeiCod(String imeiCod) {
+		this.imeiCod = imeiCod;
+	}
+
+	public int getMemory() {
+		return memory;
+	}
+
+	public void setMemory(int memory) {
+		this.memory = memory;
+	}
+	
+
+	
+	
 
 }

@@ -17,4 +17,24 @@ public class Televisore extends Prodotto {
 		this.telSmart = telSmart;
 		
 	}
+	
+	//Metodi getters e setters
+
+	public byte getTelSize() {
+		return telSize;
+	}
+
+	public void setTelSize(byte telSize) {
+		this.telSize = telSize;
+	}
+
+	public boolean isTelSmart() {
+		return telSmart;
+	}
+
+	public void setTelSmart(boolean telSmart) {
+		this.telSmart = telSmart;
+	}
+	
+	
 }

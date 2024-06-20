@@ -4,6 +4,8 @@ public class Main {
 
 	public static void main(String[] args) {
 		
+		//Creazione di un'istannza della classe Smartphone e stampa di prova di metodi e attributi
+		
 		Smartphone newCell = new Smartphone("Edge 40" , "Motorola" , 250 , 22 , "1234567890123456" , 128);
 		
 		System.out.println("Caratteristiche smartphone: ");

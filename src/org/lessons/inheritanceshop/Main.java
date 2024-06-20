@@ -20,6 +20,10 @@ public class Main {
 		System.out.println("Codice completo: " + newCell.getFullProdName());
 		
 		
+		
+		
+		
+		
 		//Creazione di un'istannza della classe Smartphone e stampa di prova di metodi e attributi
 		
 		Televisore newTv = new Televisore("BohTV" , "Samsung" , 500 , 22 ,(byte) 52 , true);
@@ -33,7 +37,6 @@ public class Main {
 		}else {
 			isSmart = "No";
 		}
-			
 				
 		System.out.println("\n\n\nCaratteristiche Televisore: ");
 		System.out.println("Nome: " + newTv.getProdName());

@@ -49,6 +49,34 @@ public class Main {
 		System.out.println("Codice numerico: " + newTv.getProdCode());
 		System.out.println("Codice completo: " + newTv.getFullProdName());
 		
+		
+		
+		
+		//Creazione di un'istannza della classe Smartphone e stampa di prova di metodi e attributi
+		
+		Cuffie newHeadPhones = new Cuffie("HD-619" , "AKG" , 200 , 22 , "Verde" , false);
+				
+		//Dichiariamo una variabile che useremo per visualizzare se il televisore è smart oppure no in forma più leggibile
+		String areWireless;
+		
+		//Verifichiamo il valore della variabile telSmart, se vero daremo ad isSmart valroe "Sì", altrimenti valore "No"
+		if (newHeadPhones.isCufWireless()) {
+			areWireless = "Wireless";
+		}else {
+			areWireless = "Cablate";
+		}
+				
+		System.out.println("\n\n\nCaratteristiche delle Cuffie: ");
+		System.out.println("Nome: " + newHeadPhones.getProdName());
+		System.out.println("Marca: " + newHeadPhones.getProdBrand());
+		System.out.printf("Prezzo base: %.2f €\n", newHeadPhones.getProdPrice());
+		System.out.println("Iva applicata: " + newHeadPhones.getProdIva());
+		System.out.println("Colore: " + newHeadPhones.getCufColor() + "\"");
+		System.out.println("Wireless/Cablate: " + areWireless);
+		System.out.printf("Prezzo + IVA: %.2f €\n", newHeadPhones.getTaxedPrice());
+		System.out.println("Codice numerico: " + newHeadPhones.getProdCode());
+		System.out.println("Codice completo: " + newHeadPhones.getFullProdName());
+		
 
 	}
 

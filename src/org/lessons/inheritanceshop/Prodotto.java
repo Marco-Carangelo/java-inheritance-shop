@@ -21,7 +21,7 @@ public class Prodotto {
 		final int MIN = 0;
 		final int MAX = 99999999;
 			
-		this.prodCode= ProdUtils.randomCodeGenerator(MIN, MAX);
+		this.prodCode= shopUtils.randomCodeGenerator(MIN, MAX);
 				
 			
 		//Assegnazione degli altri attributi del metodo

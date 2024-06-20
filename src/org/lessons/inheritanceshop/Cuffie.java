@@ -17,6 +17,26 @@ public class Cuffie extends Prodotto {
 		this.cufWireless = cufWireless;
 		
 	}
+
+	
+	//Metodi getter e setter
+	public String getCufColor() {
+		return cufColor;
+	}
+
+	public void setCufColor(String cufColor) {
+		this.cufColor = cufColor;
+	}
+
+	public boolean isCufWireless() {
+		return cufWireless;
+	}
+
+	public void setCufWireless(boolean cufWireless) {
+		this.cufWireless = cufWireless;
+	}
+	
+	
 	
 	
 	

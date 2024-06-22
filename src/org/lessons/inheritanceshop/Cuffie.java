@@ -17,6 +17,13 @@ public class Cuffie extends Prodotto {
 		this.hpWireless = hpWireless;
 		
 	}
+	
+	//Overload del costruttore che non accetta argomenti
+	
+	public Cuffie(){
+		
+	
+	}
 
 	
 	//Metodi getter e setter

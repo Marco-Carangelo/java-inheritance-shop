@@ -18,6 +18,13 @@ public class Televisore extends Prodotto {
 		
 	}
 	
+	//Overload del costruttore che non accetta argomenti
+	
+	public Televisore(){
+		
+		
+	}
+	
 	//Metodi getters e setters
 
 	public byte getTelSize() {

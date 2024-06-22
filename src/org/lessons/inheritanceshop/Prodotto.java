@@ -30,7 +30,19 @@ public class Prodotto {
 		this.prodPrice=prodPrice;
 		this.prodIva=prodIva;
 	}
+	
+	//Overload del metodo costruttore che non accetta argomenti
+	public Prodotto() {
 
+		//Assegnazione a prodCode di un valore random compreso tra le costanti MIN = 0 e Max = 99999999
+			
+		final int MIN = 0;
+		final int MAX = 99999999;
+			
+		this.prodCode= shopUtils.randomCodeGenerator(MIN, MAX);
+		
+	}
+	
 
 	
 	//Metodi Getter e Setter
@@ -105,6 +117,15 @@ public class Prodotto {
 		String fullName = String.format("%08d-%s",getProdCode() ,prodName);
 		
 		return fullName;
+	}
+	
+	
+	//Metodo per popolare il prodotto
+	
+	public void popolaProdotto() {
+		
+		
+		
 	}
 
 	

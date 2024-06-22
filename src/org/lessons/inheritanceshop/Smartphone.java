@@ -18,6 +18,14 @@ public class Smartphone extends Prodotto {
 		
 	}
 	
+	//Overload del costruttore che non accetta argomenti
+	
+public Smartphone(){
+		
+		
+		
+	}
+	
 	
 	//Metodi getter e setter
 	

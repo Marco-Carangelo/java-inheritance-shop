@@ -1,5 +1,7 @@
 package org.lessons.inheritanceshop;
 
+import java.util.Scanner;
+
 public class Prodotto {
 	
 	//Dichiarazione degli attributi della classe
@@ -124,7 +126,16 @@ public class Prodotto {
 	
 	public void popolaProdotto() {
 		
+		Scanner scanner = new Scanner(System.in);
 		
+		System.out.print("Inserisci il nome del prodotto: ");
+		this.prodName= scanner.nextLine();
+		System.out.print("Inserisci la marca del prodotto: ");
+		this.prodBrand= scanner.nextLine();
+		System.out.print("Inserisci il prezzo base del prodotto: ");
+		this.prodPrice= scanner.nextFloat();
+		System.out.print("Inserisci l'IVA applicata al prodotto: ");
+		this.prodIva = scanner.nextInt();
 		
 	}
 

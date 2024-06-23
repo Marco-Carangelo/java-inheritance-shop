@@ -1,5 +1,7 @@
 package org.lessons.inheritanceshop;
 
+import java.util.Scanner;
+
 public class Smartphone extends Prodotto {
 	
 	//Attributi della classe Smartphone
@@ -20,7 +22,7 @@ public class Smartphone extends Prodotto {
 	
 	//Overload del costruttore che non accetta argomenti
 	
-public Smartphone(){
+	public Smartphone(){
 		
 		
 		
@@ -45,8 +47,9 @@ public Smartphone(){
 		this.memory = memory;
 	}
 	
+	
 
 	
-	
+
 
 }

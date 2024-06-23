@@ -1,5 +1,7 @@
 package org.lessons.inheritanceshop;
 
+import java.util.Scanner;
+
 public class Cuffie extends Prodotto {
 	
 	//Attributi della classe Smartphone
@@ -44,7 +46,23 @@ public class Cuffie extends Prodotto {
 	}
 	
 	
+	//Metodo per popolare il prodotto t
 	
+	@Override
+	public void popolaProdotto() {
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		super.popolaProdotto();
+		
+		System.out.print("Inserisci la dimensione del televisore in pollici: ");
+		this.hPColor= scanner.nextLine();
+		System.out.print("Specificare se si tratta di un televisore smart (true/false): ");
+		this.hpWireless= scanner.nextBoolean();
+		
+		scanner.close();
+		
+	}
 	
 	
 }

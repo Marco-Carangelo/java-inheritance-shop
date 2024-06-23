@@ -1,5 +1,7 @@
 package org.lessons.inheritanceshop;
 
+import java.util.Scanner;
+
 public class Televisore extends Prodotto {
 	
 	//Attributi della classe Smartphone
@@ -41,6 +43,24 @@ public class Televisore extends Prodotto {
 
 	public void setTelSmart(boolean telSmart) {
 		this.telSmart = telSmart;
+	}
+	
+	//Metodo per popolare il prodotto t
+	
+	@Override
+	public void popolaProdotto() {
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		super.popolaProdotto();
+		
+		System.out.print("Inserisci la dimensione del televisore in pollici: ");
+		this.telSize= scanner.nextByte();
+		System.out.print("Specificare se si tratta di un televisore smart (true/false): ");
+		this.telSmart= scanner.nextBoolean();
+		
+		scanner.close();
+		
 	}
 	
 	

@@ -23,7 +23,73 @@ public class Carrello {
 		byte sceltaProdotto = 0;
 		
 		
+		System.out.print("Scegli il prodotto da inserire.Premi:\n1.Per smartphone\n2.Per televisore\n3.Per Cuffie\n");
+		sceltaProdotto = scanner.nextByte();
+
 		
+		//while(scelta ) {
+		int i = 0;
+			
+			switch(sceltaProdotto) {
+				
+				case 1:
+					
+					Smartphone nuovoSmart = new Smartphone();
+					nuovoSmart.popolaProdotto();				
+					
+					do{
+						if(smartphones[i] == null) {
+							smartphones[i] = nuovoSmart;
+						}
+						
+						i++;
+					}
+					while(i <smartphones.length && smartphones[i] != null);
+					
+					break;
+					
+				case 2:
+					
+					Televisore nuovoTv = new Televisore();
+					nuovoTv.popolaProdotto();				
+				
+					do{
+						if(televisori[i] == null) {
+							televisori[i] = nuovoTv;
+						}
+						
+						i++;
+					}
+					while(i <televisori.length && televisori[i] != null);
+					
+					break;
+					
+				case 3:
+					
+					Cuffie nuoveCuffie = new Cuffie();
+					nuoveCuffie.popolaProdotto();				
+				
+					do{
+						if(cuffie[i] == null) {
+							cuffie[i] = nuoveCuffie;
+						}
+						
+						i++;
+					}
+					while(i <cuffie.length && cuffie[i] != null);
+					
+					break;
+					
+				default:
+					System.out.println("La scelta effettuata non corrisponde a nessun prodotto");
+			
+			}
+			
+		//	System.out.println("Vuoi inserire un nuovo prodotto? S/N");
+			
+	//	}
+		
+			
 		
 		
 		

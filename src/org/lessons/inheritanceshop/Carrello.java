@@ -18,17 +18,21 @@ public class Carrello {
 		
 		//Variabile di controllo per l'uscita dal ciclo while
 		boolean scelta = true;
+		char userChoice;
 		
 		//Variabile per la scelta del prodotto da inserire
 		byte sceltaProdotto = 0;
 		
 		
-		System.out.print("Scegli il prodotto da inserire.Premi:\n1.Per smartphone\n2.Per televisore\n3.Per Cuffie\n");
-		sceltaProdotto = scanner.nextByte();
+		
 
 		
-		//while(scelta ) {
-		int i = 0;
+		while(scelta ) {
+			
+			userChoice = 0;
+			System.out.print("Scegli il prodotto da inserire.Premi:\n1.Per smartphone\n2.Per televisore\n3.Per Cuffie\n");
+			sceltaProdotto = scanner.nextByte();
+			int i = 0;
 			
 			switch(sceltaProdotto) {
 				
@@ -85,9 +89,29 @@ public class Carrello {
 			
 			}
 			
-		//	System.out.println("Vuoi inserire un nuovo prodotto? S/N");
 			
-	//	}
+			
+			while(userChoice != 's' && userChoice != 'n') {
+				
+			System.out.println("Vuoi inserire un nuovo prodotto? S/N");
+			
+			userChoice = scanner.next().toLowerCase().charAt(0);	
+			
+				if(userChoice == 's') {
+					
+					scelta = true;
+					
+				}else if(userChoice == 'n') {
+					
+					scelta = false;
+					
+					}else {
+						
+						System.out.println("Inserire un valore valido:\nS per Sì o N per No");
+						
+					}
+			}
+		}
 		
 			
 		

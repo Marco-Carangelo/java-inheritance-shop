@@ -89,28 +89,9 @@ public class Carrello {
 			
 			}
 			
+			System.out.println("Vuoi inserire un nuovo prodotto?");
 			
-			
-			while(userChoice != 's' && userChoice != 'n') {
-				
-			System.out.println("Vuoi inserire un nuovo prodotto? S/N");
-			
-			userChoice = scanner.next().toLowerCase().charAt(0);	
-			
-				if(userChoice == 's') {
-					
-					scelta = true;
-					
-				}else if(userChoice == 'n') {
-					
-					scelta = false;
-					
-					}else {
-						
-						System.out.println("Inserire un valore valido:\nS per Sì o N per No");
-						
-					}
-			}
+			scelta = shopUtils.choiceManager();
 		}
 		
 			

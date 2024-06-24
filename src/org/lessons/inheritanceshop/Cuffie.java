@@ -56,8 +56,8 @@ public class Cuffie extends Prodotto {
 		
 		System.out.print("Inserisci il colore del prodotto: ");
 		this.hPColor= scanner.nextLine();
-		System.out.print("il prodotto è wireless? true/false: ");
-		this.hpWireless= scanner.nextBoolean();
+		System.out.println("il prodotto è wireless? ");
+		this.hpWireless= shopUtils.choiceManager();
 	}
 	
 

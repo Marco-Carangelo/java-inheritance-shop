@@ -56,8 +56,8 @@ public class Televisore extends Prodotto {
 		
 		System.out.print("Inserisci la dimensione dello schermo in pollici: ");
 		this.telSize= scanner.nextByte();
-		System.out.print("il prodotto è smart? true/false: ");
-		this.telSmart= scanner.nextBoolean();
+		System.out.println("il prodotto è smart?");
+		this.telSmart= shopUtils.choiceManager();
 	}
 
 	

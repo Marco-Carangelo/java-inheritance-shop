@@ -104,7 +104,7 @@ public class Prodotto {
 	
 	//Metodo per avere il prezzo + IVA
 	
-	public float getTaxedPrice( ) {
+	public float getTaxedPrice() {
 			
 		//Restituiamo il risultato della somma tra il prezzo del prodotto e la percentuale d'IVA
 			
@@ -136,6 +136,17 @@ public class Prodotto {
 		this.prodPrice= scanner.nextFloat();
 		System.out.print("Inserisci l'IVA applicata al prodotto: ");
 		this.prodIva = scanner.nextInt();
+		
+		
+	}
+	
+	//Overriding del metodo toString() per stampare i campi dell'oggetto Prodotto
+	
+	public String toString() {
+		
+		String prodInfo = String.format("Nome: %s\nMarca: %s\nPrezzo base: %.2f\nPrezzo + IVA: %.2f\nCodice completo: %s", prodName , prodBrand , prodPrice , getTaxedPrice() , getFullProdName() );
+		
+		return prodInfo;
 		
 		
 	}

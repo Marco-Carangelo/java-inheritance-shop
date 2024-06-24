@@ -25,17 +25,23 @@ public class Carrello {
 		
 		
 		
-
+		//La parte del programma che si occuperà di acquisire i dati dei prodotti verrà ciclata finchè l'utente deciderà di inserire nuovi prodotti
 		
 		while(scelta ) {
 			
-			userChoice = 0;
-			System.out.print("Scegli il prodotto da inserire.Premi:\n1.Per smartphone\n2.Per televisore\n3.Per Cuffie\n");
+			// Chiediamo all'utente quale prodotto vuole inserire. Se la scelta non è coerente verrà visualizzato un messaggio d'errore per avvisarlo
+			
+			System.out.print("Scegli il prodotto da inserire. Premi:\n1.Per smartphone\n2.Per televisore\n3.Per Cuffie\n");
+			
 			sceltaProdotto = scanner.nextByte();
+			
+			//Inizializziamo fuori dallo switch il contatore che ci servirà per popolare gli array inerenti ai vari prodotti
 			int i = 0;
 			
 			switch(sceltaProdotto) {
 				
+				//All'interno di ogni Case viene inizializzato un oggetto coerente alla scelta dell'utente e viene invocata la funzione per popolarne i campi
+				//Successivamente il riferimento all'oggeto creato viene salvato nella prima posizione che punta a NULL dell'array corrispondente
 				case 1:
 					
 					Smartphone nuovoSmart = new Smartphone();
@@ -88,6 +94,8 @@ public class Carrello {
 					System.out.println("La scelta effettuata non corrisponde a nessun prodotto");
 			
 			}
+			
+			//Alla fine del cliclo chiediamo all'utente se vuole inserire un nuovo prodotto o meno
 			
 			System.out.println("Vuoi inserire un nuovo prodotto?");
 			

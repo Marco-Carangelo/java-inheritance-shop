@@ -12,7 +12,7 @@ public class shopUtils {
 	}
 	
 	
-	//Metodo per gestire una tra due valore inserendo S per Sì ed N per No
+	//Metodo per gestire una scelta tra due valori inserendo S per Sì ed N per No e che restituisce un valore booleano: true per Sì e false per No
 	
 	static public boolean choiceManager() {
 		
@@ -20,6 +20,8 @@ public class shopUtils {
 		char userChoice = 0;
 		
 		Scanner scanner = new Scanner(System.in);
+		
+		//Se il valore inserito non è coerente, l'utente viene avvisato e si chiedere di effettuare di nuovo la scelta
 		
 		while(userChoice != 's' && userChoice != 'n') {
 			
@@ -41,6 +43,7 @@ public class shopUtils {
 						
 					}
 			}
+		
 		return choice;
 	}
 	

@@ -60,7 +60,18 @@ public class Cuffie extends Prodotto {
 		this.hpWireless= shopUtils.choiceManager();
 	}
 	
-
+	//Overriding del metodo toString() per stampare i campi dell'oggetto Cuffie
+	
+	public String toString() {
+		
+		String prodInfo = super.toString();
+		
+		String smartInfo = String.format("%s\nColore: %s\"\nWireless: %b" , prodInfo , hPColor , hpWireless);
+		
+		return smartInfo;
+		
+		
+	}
 	
 	
 }

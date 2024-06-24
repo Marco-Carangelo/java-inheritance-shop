@@ -61,6 +61,20 @@ public class Smartphone extends Prodotto {
 		this.memory= scanner.nextInt();
 	}
 	
+	
+	//Overriding del metodo toString() per stampare i campi dell'oggetto Smartphone
+	
+		public String toString() {
+			
+			String prodInfo = super.toString();
+			
+			String smartInfo = String.format("%s\nCodice IMEI: %s\nMemoria: %d" , prodInfo , imeiCod , memory);
+			
+			return smartInfo;
+			
+			
+		}
+	
 
 
 }

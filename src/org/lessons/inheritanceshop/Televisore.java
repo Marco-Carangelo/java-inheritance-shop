@@ -60,5 +60,16 @@ public class Televisore extends Prodotto {
 		this.telSmart= shopUtils.choiceManager();
 	}
 
+	//Overriding del metodo toString() per stampare i campi dell'oggetto Televisore
 	
+	public String toString() {
+		
+		String prodInfo = super.toString();
+		
+		String telInfo = String.format("%s\nDimensioni dello schermo: %s\"\nSmart TV: %b" , prodInfo , telSize , telSmart);
+		
+		return telInfo;
+		
+		
+	}
 }

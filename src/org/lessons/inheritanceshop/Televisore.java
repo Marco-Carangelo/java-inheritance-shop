@@ -45,23 +45,20 @@ public class Televisore extends Prodotto {
 		this.telSmart = telSmart;
 	}
 	
-	//Metodo per popolare il prodotto t
+	//Override del metodo per popolare il prodotto
 	
 	@Override
-	public void popolaProdotto() {
+	public void popolaProdotto( ) {
 		
 		Scanner scanner = new Scanner(System.in);
 		
-		super.popolaProdotto();
+		super.popolaProdotto();	
 		
-		System.out.print("Inserisci la dimensione del televisore in pollici: ");
+		System.out.print("Inserisci la dimensione dello schermo in pollici: ");
 		this.telSize= scanner.nextByte();
-		System.out.print("Specificare se si tratta di un televisore smart (true/false): ");
+		System.out.print("il prodotto è smart? true/false: ");
 		this.telSmart= scanner.nextBoolean();
-		
-		scanner.close();
-		
 	}
-	
+
 	
 }

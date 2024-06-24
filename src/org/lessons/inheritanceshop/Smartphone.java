@@ -47,8 +47,19 @@ public class Smartphone extends Prodotto {
 		this.memory = memory;
 	}
 	
+	//Override del metodo per popolare il prodotto
 	
-
+	@Override
+	public void popolaProdotto( ) {
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		super.popolaProdotto();		
+		System.out.print("Inserisci l'IMEI del prodotto: ");
+		this.imeiCod= scanner.nextLine();
+		System.out.print("Inserisci la memoria del prodotto: ");
+		this.memory= scanner.nextInt();
+	}
 	
 
 

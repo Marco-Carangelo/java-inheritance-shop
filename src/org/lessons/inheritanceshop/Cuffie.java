@@ -45,24 +45,22 @@ public class Cuffie extends Prodotto {
 		this.hpWireless = cufWireless;
 	}
 	
-	
-	//Metodo per popolare il prodotto t
+	//Override del metodo per popolare il prodotto
 	
 	@Override
-	public void popolaProdotto() {
+	public void popolaProdotto( ) {
 		
 		Scanner scanner = new Scanner(System.in);
 		
-		super.popolaProdotto();
+		super.popolaProdotto();	
 		
-		System.out.print("Inserisci la dimensione del televisore in pollici: ");
+		System.out.print("Inserisci il colore del prodotto: ");
 		this.hPColor= scanner.nextLine();
-		System.out.print("Specificare se si tratta di un televisore smart (true/false): ");
+		System.out.print("il prodotto è wireless? true/false: ");
 		this.hpWireless= scanner.nextBoolean();
-		
-		scanner.close();
-		
 	}
+	
+
 	
 	
 }

@@ -124,8 +124,9 @@ public class Prodotto {
 	
 	//Metodo per popolare il prodotto
 	
-	public void popolaProdotto("Edge40" , "Motorola" , 250 , 22 ) {
+	public void popolaProdotto( ) {
 		
+		Scanner scanner = new Scanner(System.in);
 		
 		System.out.print("Inserisci il nome del prodotto: ");
 		this.prodName= scanner.nextLine();
@@ -136,7 +137,6 @@ public class Prodotto {
 		System.out.print("Inserisci l'IVA applicata al prodotto: ");
 		this.prodIva = scanner.nextInt();
 		
-		scanner.close();
 		
 	}
 

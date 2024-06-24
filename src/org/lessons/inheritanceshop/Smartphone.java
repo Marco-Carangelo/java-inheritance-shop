@@ -68,7 +68,7 @@ public class Smartphone extends Prodotto {
 			
 			String prodInfo = super.toString();
 			
-			String smartInfo = String.format("%s\nCodice IMEI: %s\nMemoria: %d" , prodInfo , smartImei , smartMemory);
+			String smartInfo = String.format("%s\nCodice IMEI: %s\nMemoria: %d\n" , prodInfo , smartImei , smartMemory);
 			
 			return smartInfo;
 			

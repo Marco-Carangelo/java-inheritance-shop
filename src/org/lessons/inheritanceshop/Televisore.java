@@ -66,7 +66,7 @@ public class Televisore extends Prodotto {
 		
 		String prodInfo = super.toString();
 		
-		String telInfo = String.format("%s\nDimensioni dello schermo: %s\"\nSmart TV: %b" , prodInfo , tvSize , tvSmart);
+		String telInfo = String.format("%s\nDimensioni dello schermo: %s\"\nSmart TV: %b\n" , prodInfo , tvSize , tvSmart);
 		
 		return telInfo;
 		

@@ -66,7 +66,7 @@ public class Cuffie extends Prodotto {
 		
 		String prodInfo = super.toString();
 		
-		String smartInfo = String.format("%s\nColore: %s\"\nWireless: %b" , prodInfo , hpColor , hpWireless);
+		String smartInfo = String.format("%s\nColore: %s\"\nWireless: %b\n" , prodInfo , hpColor , hpWireless);
 		
 		return smartInfo;
 		

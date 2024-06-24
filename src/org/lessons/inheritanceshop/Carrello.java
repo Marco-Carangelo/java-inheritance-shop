@@ -25,7 +25,6 @@ public class Carrello {
 		
 		//Variabile di controllo per l'uscita dal ciclo while
 		boolean scelta = true;
-		char userChoice;
 		
 		//Variabile per la scelta del prodotto da inserire
 		byte sceltaProdotto = 0;
@@ -46,6 +45,7 @@ public class Carrello {
 				
 				//All'interno di ogni Case viene inizializzato un oggetto coerente alla scelta dell'utente e viene invocata la funzione per popolarne i campi
 				//Successivamente il riferimento all'oggeto creato viene salvato nella prima posizione che punta a NULL dell'array corrispondente
+				//Infine viene incrementato l'indice di quello specifico array
 				case 1:
 					
 					Smartphone nuovoSmart = new Smartphone();
@@ -89,15 +89,54 @@ public class Carrello {
 			
 			//Alla fine del cliclo chiediamo all'utente se vuole inserire un nuovo prodotto o meno
 			
-			System.out.println("Vuoi inserire un nuovo prodotto?");
+			System.out.println("Vuoi inserire un nuovo prodotto?\n");
 			
 			scelta = shopUtils.choiceManager();
 		}
 		
+		scanner.close();
 			
-		//Stampa degli array con 
+		//Stampa degli array con gli oggetti corrispondenti
 		
-	
+		//Stampa Smartphones
+		
+		System.out.println("********************************************\n");
+		System.out.println("Prodotti di tipo Smartphone nel carrello:\n");
+		
+		int i = 0;
+		while (smartphones[i] != null) {
+			
+			System.out.println(smartphones[i].toString());
+			
+			i++;
+		}
+		
+		//Stampa Televisori
+		
+			System.out.println("********************************************\n");
+			System.out.println("Prodotti di tipo Televisore nel carrello:\n");
+			
+			i = 0;
+			while (televisori[i] != null) {
+				
+				System.out.println(televisori[i].toString());
+				
+				i++;
+			}
+			
+				
+		//Stampa Cuffie
+		
+		System.out.println("\n********************************************\n");
+		System.out.println("Prodotti di tipo Cuffie nel carrello:\n");
+		
+		i = 0;
+		while (cuffie[i] != null) {
+			
+			System.out.println(cuffie[i].toString());
+			
+			i++;
+		}
 		
 
 	}

@@ -16,6 +16,13 @@ public class Carrello {
 		Televisore televisori[] = new Televisore[10];
 		Cuffie cuffie[] = new Cuffie[10];
 		
+		//Inizializziamo tre contatori per gli array appena creati
+		
+		int smartIndex = 0;
+		int tvIndex = 0;
+		int hpIndex = 0;
+		
+		
 		//Variabile di controllo per l'uscita dal ciclo while
 		boolean scelta = true;
 		char userChoice;
@@ -35,9 +42,6 @@ public class Carrello {
 			
 			sceltaProdotto = scanner.nextByte();
 			
-			//Inizializziamo fuori dallo switch il contatore che ci servirà per popolare gli array inerenti ai vari prodotti
-			int i = 0;
-			
 			switch(sceltaProdotto) {
 				
 				//All'interno di ogni Case viene inizializzato un oggetto coerente alla scelta dell'utente e viene invocata la funzione per popolarne i campi
@@ -45,48 +49,36 @@ public class Carrello {
 				case 1:
 					
 					Smartphone nuovoSmart = new Smartphone();
-					nuovoSmart.popolaProdotto();				
 					
-					do{
-						if(smartphones[i] == null) {
-							smartphones[i] = nuovoSmart;
-						}
-						
-						i++;
-					}
-					while(i <smartphones.length && smartphones[i] != null);
+					nuovoSmart.popolaProdotto();
+					
+					smartphones[smartIndex] = nuovoSmart;				
+					
+					smartIndex++;
 					
 					break;
 					
 				case 2:
 					
 					Televisore nuovoTv = new Televisore();
-					nuovoTv.popolaProdotto();				
-				
-					do{
-						if(televisori[i] == null) {
-							televisori[i] = nuovoTv;
-						}
-						
-						i++;
-					}
-					while(i <televisori.length && televisori[i] != null);
+					
+					nuovoTv.popolaProdotto();
+					
+					televisori[tvIndex] = nuovoTv;				
+					
+					tvIndex++;
 					
 					break;
 					
 				case 3:
 					
 					Cuffie nuoveCuffie = new Cuffie();
-					nuoveCuffie.popolaProdotto();				
-				
-					do{
-						if(cuffie[i] == null) {
-							cuffie[i] = nuoveCuffie;
-						}
-						
-						i++;
-					}
-					while(i <cuffie.length && cuffie[i] != null);
+					
+					nuoveCuffie.popolaProdotto();
+					
+					cuffie[hpIndex] = nuoveCuffie;				
+					
+					hpIndex++;
 					
 					break;
 					
@@ -103,9 +95,9 @@ public class Carrello {
 		}
 		
 			
+		//Stampa degli array con 
 		
-		
-		
+	
 		
 
 	}

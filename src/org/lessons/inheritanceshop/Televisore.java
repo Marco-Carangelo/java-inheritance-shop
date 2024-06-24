@@ -6,17 +6,17 @@ public class Televisore extends Prodotto {
 	
 	//Attributi della classe Smartphone
 	
-	private byte telSize;
-	private boolean telSmart;
+	private byte tvSize;
+	private boolean tvSmart;
 	
 	//Costruttore della classe Smartphone
 	
-	public Televisore(String prodName, String prodBrand, float prodPrice,int prodIva,byte telSize, boolean telSmart){
+	public Televisore(String prodName, String prodBrand, float prodPrice,int prodIva,byte tvSize, boolean tvSmart){
 		
 		super(prodName,prodBrand,prodPrice,prodIva);
 		
-		this.telSize = telSize;
-		this.telSmart = telSmart;
+		this.tvSize = tvSize;
+		this.tvSmart = tvSmart;
 		
 	}
 	
@@ -29,20 +29,20 @@ public class Televisore extends Prodotto {
 	
 	//Metodi getters e setters
 
-	public byte getTelSize() {
-		return telSize;
+	public byte getTvSize() {
+		return tvSize;
 	}
 
-	public void setTelSize(byte telSize) {
-		this.telSize = telSize;
+	public void setTvSize(byte telSize) {
+		this.tvSize = telSize;
 	}
 
-	public boolean isTelSmart() {
-		return telSmart;
+	public boolean isTvSmart() {
+		return tvSmart;
 	}
 
-	public void setTelSmart(boolean telSmart) {
-		this.telSmart = telSmart;
+	public void setTvSmart(boolean telSmart) {
+		this.tvSmart = telSmart;
 	}
 	
 	//Override del metodo per popolare il prodotto
@@ -55,9 +55,9 @@ public class Televisore extends Prodotto {
 		super.popolaProdotto();	
 		
 		System.out.print("Inserisci la dimensione dello schermo in pollici: ");
-		this.telSize= scanner.nextByte();
+		this.tvSize= scanner.nextByte();
 		System.out.println("il prodotto è smart?");
-		this.telSmart= shopUtils.choiceManager();
+		this.tvSmart= shopUtils.choiceManager();
 	}
 
 	//Overriding del metodo toString() per stampare i campi dell'oggetto Televisore
@@ -66,7 +66,7 @@ public class Televisore extends Prodotto {
 		
 		String prodInfo = super.toString();
 		
-		String telInfo = String.format("%s\nDimensioni dello schermo: %s\"\nSmart TV: %b" , prodInfo , telSize , telSmart);
+		String telInfo = String.format("%s\nDimensioni dello schermo: %s\"\nSmart TV: %b" , prodInfo , tvSize , tvSmart);
 		
 		return telInfo;
 		

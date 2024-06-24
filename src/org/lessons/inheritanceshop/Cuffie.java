@@ -6,16 +6,16 @@ public class Cuffie extends Prodotto {
 	
 	//Attributi della classe Smartphone
 	
-	private String hPColor;
+	private String hpColor;
 	private boolean hpWireless;
 	
 	//Costruttore della classe Smartphone
 	
-	public Cuffie(String prodName, String prodBrand, float prodPrice,int prodIva, String hPColor, boolean hpWireless){
+	public Cuffie(String prodName, String prodBrand, float prodPrice,int prodIva, String hpColor, boolean hpWireless){
 		
 		super(prodName,prodBrand,prodPrice,prodIva);
 		
-		this.hPColor = hPColor;
+		this.hpColor = hpColor;
 		this.hpWireless = hpWireless;
 		
 	}
@@ -29,12 +29,12 @@ public class Cuffie extends Prodotto {
 
 	
 	//Metodi getter e setter
-	public String getHPColor() {
-		return hPColor;
+	public String getHpColor() {
+		return hpColor;
 	}
 
-	public void setHPColor(String cufColor) {
-		this.hPColor = cufColor;
+	public void setHpColor(String cufColor) {
+		this.hpColor = cufColor;
 	}
 
 	public boolean isHPWireless() {
@@ -55,7 +55,7 @@ public class Cuffie extends Prodotto {
 		super.popolaProdotto();	
 		
 		System.out.print("Inserisci il colore del prodotto: ");
-		this.hPColor= scanner.nextLine();
+		this.hpColor= scanner.nextLine();
 		System.out.println("il prodotto è wireless? ");
 		this.hpWireless= shopUtils.choiceManager();
 	}
@@ -66,7 +66,7 @@ public class Cuffie extends Prodotto {
 		
 		String prodInfo = super.toString();
 		
-		String smartInfo = String.format("%s\nColore: %s\"\nWireless: %b" , prodInfo , hPColor , hpWireless);
+		String smartInfo = String.format("%s\nColore: %s\"\nWireless: %b" , prodInfo , hpColor , hpWireless);
 		
 		return smartInfo;
 		

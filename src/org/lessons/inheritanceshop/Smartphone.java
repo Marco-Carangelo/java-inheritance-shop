@@ -6,17 +6,17 @@ public class Smartphone extends Prodotto {
 	
 	//Attributi della classe Smartphone
 	
-	private String imeiCod;
-	private int memory;
+	private String smartImei;
+	private int smartMemory;
 	
 	//Costruttore della classe Smartphone
 	
-	public Smartphone(String prodName, String prodBrand, float prodPrice,int prodIva,String imeiCod, int memory){
+	public Smartphone(String prodName, String prodBrand, float prodPrice,int prodIva,String smartImei, int memory){
 		
 		super(prodName,prodBrand,prodPrice,prodIva);
 		
-		this.imeiCod = imeiCod;
-		this.memory = memory;
+		this.smartImei = smartImei;
+		this.smartMemory = memory;
 		
 	}
 	
@@ -31,20 +31,20 @@ public class Smartphone extends Prodotto {
 	
 	//Metodi getter e setter
 	
-	public String getImeiCod() {
-		return imeiCod;
+	public String getSmartImei() {
+		return smartImei;
 	}
 
-	public void setImeiCod(String imeiCod) {
-		this.imeiCod = imeiCod;
+	public void setSmartImei(String imeiCod) {
+		this.smartImei = imeiCod;
 	}
 
-	public int getMemory() {
-		return memory;
+	public int getSmartMemory() {
+		return smartMemory;
 	}
 
-	public void setMemory(int memory) {
-		this.memory = memory;
+	public void setSmartMemory(int memory) {
+		this.smartMemory = memory;
 	}
 	
 	//Override del metodo per popolare il prodotto
@@ -56,9 +56,9 @@ public class Smartphone extends Prodotto {
 		
 		super.popolaProdotto();		
 		System.out.print("Inserisci l'IMEI del prodotto: ");
-		this.imeiCod= scanner.nextLine();
+		this.smartImei= scanner.nextLine();
 		System.out.print("Inserisci la memoria del prodotto: ");
-		this.memory= scanner.nextInt();
+		this.smartMemory= scanner.nextInt();
 	}
 	
 	
@@ -68,7 +68,7 @@ public class Smartphone extends Prodotto {
 			
 			String prodInfo = super.toString();
 			
-			String smartInfo = String.format("%s\nCodice IMEI: %s\nMemoria: %d" , prodInfo , imeiCod , memory);
+			String smartInfo = String.format("%s\nCodice IMEI: %s\nMemoria: %d" , prodInfo , smartImei , smartMemory);
 			
 			return smartInfo;
 			

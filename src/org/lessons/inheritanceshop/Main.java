@@ -15,8 +15,8 @@ public class Main {
 		System.out.println("Marca: " + newCell.getProdBrand());
 		System.out.printf("Prezzo base: %.2f €\n", newCell.getProdPrice());
 		System.out.println("Iva applicata: " + newCell.getProdIva());
-		System.out.println("Codice IMEI: " + newCell.getImeiCod());
-		System.out.println("Capacità di memoria: " + newCell.getMemory());
+		System.out.println("Codice IMEI: " + newCell.getSmartImei());
+		System.out.println("Capacità di memoria: " + newCell.getSmartMemory());
 		System.out.printf("Prezzo + IVA: %.2f €\n", newCell.getTaxedPrice());
 		System.out.println("Codice numerico: " + newCell.getProdCode());
 		System.out.println("Codice completo: " + newCell.getFullProdName());
@@ -34,7 +34,7 @@ public class Main {
 		String isSmart;
 		
 		//Verifichiamo il valore della variabile telSmart, se vero daremo ad isSmart valroe "Sì", altrimenti valore "No"
-		if (newTv.isTelSmart()) {
+		if (newTv.isTvSmart()) {
 			isSmart = "Sì";
 		}else {
 			isSmart = "No";
@@ -45,7 +45,7 @@ public class Main {
 		System.out.println("Marca: " + newTv.getProdBrand());
 		System.out.printf("Prezzo base: %.2f €\n", newTv.getProdPrice());
 		System.out.println("Iva applicata: " + newTv.getProdIva());
-		System.out.println("Dimensione in pollici: " + newTv.getTelSize() + "\"");
+		System.out.println("Dimensione in pollici: " + newTv.getTvSize() + "\"");
 		System.out.println("SmartTV: " + isSmart);
 		System.out.printf("Prezzo + IVA: %.2f €\n", newTv.getTaxedPrice());
 		System.out.println("Codice numerico: " + newTv.getProdCode());
@@ -73,7 +73,7 @@ public class Main {
 		System.out.println("Marca: " + newHeadPhones.getProdBrand());
 		System.out.printf("Prezzo base: %.2f €\n", newHeadPhones.getProdPrice());
 		System.out.println("Iva applicata: " + newHeadPhones.getProdIva());
-		System.out.println("Colore: " + newHeadPhones.getHPColor() + "\"");
+		System.out.println("Colore: " + newHeadPhones.getHpColor() + "\"");
 		System.out.println("Wireless/Cablate: " + areWireless);
 		System.out.printf("Prezzo + IVA: %.2f €\n", newHeadPhones.getTaxedPrice());
 		System.out.println("Codice numerico: " + newHeadPhones.getProdCode());

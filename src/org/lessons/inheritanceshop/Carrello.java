@@ -10,17 +10,14 @@ public class Carrello {
 		
 		Scanner scanner = new Scanner(System.in);
 		
-		//Creiamo degli arrai vuoti che possano contenere i vari prodotti inseriti
+		//Creiamo l'array vuoto che conterrà i prodotti inseriti
 		
-		Smartphone smartphones[] = new Smartphone[10];
-		Televisore televisori[] = new Televisore[10];
-		Cuffie cuffie[] = new Cuffie[10];
+		Prodotto prodotti[] = new Prodotto[50];
 		
-		//Inizializziamo tre contatori per gli array appena creati
 		
-		int smartIndex = 0;
-		int tvIndex = 0;
-		int hpIndex = 0;
+		//Inizializziamo il contatore che gestirà l'array
+		
+		int prodIndex = 0;
 		
 		
 		//Variabile di controllo per l'uscita dal ciclo while
@@ -52,9 +49,9 @@ public class Carrello {
 					
 					nuovoSmart.popolaProdotto();
 					
-					smartphones[smartIndex] = nuovoSmart;				
+					prodotti[prodIndex] = nuovoSmart;				
 					
-					smartIndex++;
+					prodIndex++;
 					
 					break;
 					
@@ -64,9 +61,9 @@ public class Carrello {
 					
 					nuovoTv.popolaProdotto();
 					
-					televisori[tvIndex] = nuovoTv;				
+					prodotti[prodIndex] = nuovoTv;				
 					
-					tvIndex++;
+					prodIndex++;
 					
 					break;
 					
@@ -76,9 +73,9 @@ public class Carrello {
 					
 					nuoveCuffie.popolaProdotto();
 					
-					cuffie[hpIndex] = nuoveCuffie;				
+					prodotti[prodIndex] = nuoveCuffie;				
 					
-					hpIndex++;
+					prodIndex++;
 					
 					break;
 					
@@ -104,39 +101,14 @@ public class Carrello {
 		System.out.println("Prodotti di tipo Smartphone nel carrello:\n");
 		
 		int i = 0;
-		while (smartphones[i] != null) {
+		while (prodotti[i] != null) {
 			
-			System.out.println(smartphones[i].toString());
-			
-			i++;
-		}
-		
-		//Stampa Televisori
-		
-			System.out.println("********************************************\n");
-			System.out.println("Prodotti di tipo Televisore nel carrello:\n");
-			
-			i = 0;
-			while (televisori[i] != null) {
-				
-				System.out.println(televisori[i].toString());
-				
-				i++;
-			}
-			
-				
-		//Stampa Cuffie
-		
-		System.out.println("\n********************************************\n");
-		System.out.println("Prodotti di tipo Cuffie nel carrello:\n");
-		
-		i = 0;
-		while (cuffie[i] != null) {
-			
-			System.out.println(cuffie[i].toString());
+			System.out.println(prodotti[i].toString());
 			
 			i++;
 		}
+		
+
 		
 
 	}
